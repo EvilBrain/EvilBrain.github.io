@@ -20,7 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="css/prettify.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" >
 </head>
-<body>
+<body onload="javascript:Discord()">
 	<header>
 		<div class="container">
 			<div class="row">
@@ -50,17 +50,17 @@
 							<h4>Navigation</h4>	
 							<nav>
 								<ul>
-									<li><a href="#start" class="current">Présentation</a></li>
-									<li><a href="#features">Installation</a></li>
-									<li><a href="#code">Get code</a></li>
-									<li><a href="#images">Images</a></li>
-									<li><a href="#credit">Credits</a></li>
+									<li><a href="#presentation" class="current">Présentation</a></li>
+									<li><a href="#install">Installation</a></li>
+									<li><a href="#functions">Fonctionnalités</a></li>
+									<li><a href="#utilisation">Utilisation</a></li>
+									<li><a href="#other">Autre</a></li>
 								</ul>					
 							</nav>
 						</div>
 					</aside>
 					<div class="content-info">
-						<div class="section-txt" id="start">
+						<div class="section-txt" id="presentation">
 							<h1>Pésentation de l'application</h1>
 							<div class="images">
 								<img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/EvilBrain/PlayStationRPC?style=flat-square">
@@ -83,7 +83,7 @@
 							<p>Ce software se met à jour <strong>automatiquement</strong> au lancement de l'application via le raccourcis créé sur le bureau.</p>
 							<p><strong><i class="fas fa-exclamation-triangle"></i> ATTENTION : pour le bon fonctionnement de l'application, merci de laisser les fichiers sources dans leur dossier situé dans le AppData. Si jamais il vous venait à l'idée de supprimer le raccourcis sur le bureau, il est important de lancer "PlayStationRPC_Launcher.exe" pour mettre l'application à jour. <i class="fas fa-exclamation-triangle"></i></strong></p>
 						</div>
-						<div class="section-txt" id="features">
+						<div class="section-txt" id="install">
 							<h2>Installation</h2>
 							<h4>Prérequis</h5>
 							<ul>
@@ -98,72 +98,58 @@
 							<p>Une fois l'application bien installée, un icon apparaîtra sur votre bureau. Vous pouvez maintenant la lancer !</p>
 							<img alt="Icon sur le bureau" src="./images/prpc-desktop.PNG">
 						</div>
-						<div class="section-txt" id="code">
+						<div class="section-txt" id="functions">
 							<h1>Fonctionnalités</h1>
 							<p>La principale fonction de l'application est le Rich Presence pour la PlayStation avec des status des jeux, mais il y à aussi un Custom Presence pour faire vos propres RPC personnalisés !</p>
 							<p><strong><i class="fas fa-exclamation-circle"></i> NOTE : un seul outils peut fonctionner à la fois. Si le PlayStation RPC est connecté et que vous lancer le RPC Personnalisé, la piorité passera automatiquement sur le RPC Personnalisé. Et si vous le fermer, le status repassera sur le PlayStationRPC ! <i class="fas fa-exclamation-circle"></i></strong></p>
 							<img alt="Application" src="./images/prpc-app.PNG">
-							<pre class="prettyprint">
-&lt;p&gt;Table Example:&lt;/p&gt;
-	&lt;style type=&quot;text/css&quot;&gt;
-		table.example5 {
-			background-color:GreenYellow;border:1px dotted black;width:100%;
-		}
-		table.example5 th, table.example5 td {
-			text-align:center;border:0;padding:5px;background-color:transparent;
-		}
-		table.example5 th {
-			background-color:LimeGreen;color:white;
-		}
-		table.example5 th:first-child {
-			width:20%;
-		}
-	&lt;/style&gt;
-	&lt;table class=&quot;example5&quot;&gt;
-		&lt;tr&gt;
-			&lt;th rowspan=&quot;2&quot;&gt;Table header&lt;/th&gt;&lt;td&gt;Table cell 1
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;Table cell 2&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/table&gt;
-</pre>
+							<p>Si vous trouvez un bug, nous vous invitons à le signaler sur le panel prévu accessible dans l'onglet "Aide" > "Signaler un bug". Merci d'indiquer des infos <strong>valides</strong> pour un meilleur traitement du signalement ! (vos infomations ne seront pas divulguées)</p>
+							<img alt="Panel de signalement de bug" src="./images/prpc-bug.PNG">
+							<p><strong><i class="fas fa-exclamation-triangle"></i> ATTENTION : si vous abusez de cette fonction, votre ordinateur sera ajouté à la blacklist. Si vous êtes ajouté à la blacklist, vous ne pourrez plus lancer l'application. Pour se faire enlever de la blacklist, vous pourrez ouvrir un ticket sur le serveur de support ou sur <a href="https://github.com/EvilBrain/PlayStationRPC/issues/">GitHub</a> en rédigeant un texte et en indiquant le <strong>nom de votre ordinateur</strong> ! <i class="fas fa-exclamation-triangle"></i></strong></p>
+							<p>Pour une meilleure et plus rapide utilisation du PlayStationRPC, un icon dans la barre de notifications en bas à droite avec les fonctions "Connecter", "Déconnecter" et "Quitter" pour quitter l'application.</p>
+							<img alt="Icon dans la barre de notifications" src="./images/prpc-notify.PNG">
 						</div>
-						<div class="section-txt" id="images">
-							<h3>Images</h3>
+						<div class="section-txt" id="utilisation">
+							<h1>Utilisation</h1>
+							<p>Pour commencer utiliser l'application, ouvrez-la depuis le raccourcis sur le bureau ou avec le "PlayStationRPC_Launcher.exe" (si jamais l'icon est supprimé) pour mettre à jour automatiquement l'application qui se lancera quelques secondes après. <strong>Assurez vous que l'application Discord ou Discord Canary est bien lancée.</strong></p>
+							<h3>Utiliser :</h3>
+							<h4>PlayStation RPC</h4>
+							<p>Pour utiliser le PlayStation RPC, suivez les instructions ci-dessous :</p>
 							<ul>
-								<li>Aliquam pretium euismod libero</li>
-								<li>Cum sociis natoque penatibus</li>
-								<li>Lorem ipsum dolor sit amet</li>
-								<li>Cras mauris tortor, consectetur</li>
-								<li>Proin viverra, augue ut mattis</li>
-								<li>Praesent rutrum accumsan</li>
+								<li>Cliquez sur le bouton "Connecter" pour connecter le RPC</li>
+								<li>Choisissez votre jeu dans la partie "Configuration" puis choisissez le status de votre choix lié au jeu</li>
+								<li>Cliquez sur le bouton "Mettre à jour le status" pour confirmer la configuration et mettre à jour le RPC</li>
+								<li>Profitez :)</li>
 							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis interdum sapien, vitae convallis ante. Nunc id mi scelerisque, laoreet nisl pretium, suscipit nisi. Proin porta tortor tellus, sed condimentum ligula aliquet sit amet. Mauris nulla ipsum, tempor eu vulputate ut, placerat ac tortor. Integer ut tincidunt magna. Suspendisse risus nulla, tempus a interdum et, imperdiet iaculis lectus. Maecenas ultrices diam eu massa maximus viverra.</p>
-						<pre class="prettyprint">
-&lt;pre class=&quot;prettyprint&quot;&gt;class Voila {
-public:
-  // Voila
-  static const string VOILA = &quot;Voila&quot;;
+							<p>Vous pouvez changer la configuration à tout moment, cliquez sur "Mettre à jour le status" pour confirmer vos changements et remettre à jour le status.</p>
+							<p>Si vous voulez réinitialiser la configuration, cliquez sur "Réinitialiser". <strong>Ce action n'arretera pas votre RPC !</strong></p>
+							<img alt="Configuration du PlayStation RPC" src="./images/prpc-config.PNG">
+							<h4>Custom Presence (RPC Personnalisé)</h4>
+							<p>Pour utiliser le RPC Personnalisé, suivez les instructions ci-dessous :</p>
+							<p>Rendez vous sur le <a href="https://discordapp.com/developers/applications/">portail des developpeurs de Discord</a>, puis créez une nouvelle application avec le nom de votre choix qui sera <strong>aussi celui du status</strong>.</p>
+							<img alt="Créer une nouvelle application" src="./images/prpc-newapp.PNG">
+							<img alt="Modifier l'application" src="./images/prpc-myapp.PNG">
+							<p>Ajoutez une image si vous le voulez puis copiez l'ID de l'application que vous venez de créer puis collez le dans le RPC Personnalisé et cliquez sur "Valider".</p>
+							<img alt="Coller l'idenitifiant" src="./images/prpc-pasteid.PNG">
+							<p>Retrournez sur le portail des developpeurs de Discord et rendez vous dans l'onglet "Rich Presence" puis "Art Assets" et importez une cover image et des assets.</p>
+							<img alt="Gérer les assets" src="./images/prpc-assets.PNG">
+							<p>Pour configurer l'application, aidez vous de la <a href="https://discordapp.com/developers/docs/rich-presence/how-to"> documentation Discord sur les Rich Presence</a>. Cochez les options que vous voulez.</p>
+							<img alt="Configurer l'application" src="./images/prpc-config-cp.PNG">
+							<img alt="Exemple" src="./images/prpc-exemple-cp.PNG">
+							<p><strong>Une fois la configuration terminée</strong>, utilisez les bouttons de commande :</p>
+							<img alt="Exemple" src="./images/prpc-connect.PNG">
+							<p>Pour fermer le RPC Personnalisé, cliquez sur "Fermer".</p>
+							<h4>Panel de signalement de bug</h4>
+							<p>Pour signaler un bug, vous pouvez directement le faire via le panel situé dans l'onglet "Aide" > "Signaler un bug" puis remplissez le formulaire.</p>
+							<p>Par exemple :</p>
+							<img alt="Exemple de signalement" src="./images/prpc-exemple-signalement.PNG">
+						</div>
+						<div class="section-txt" id="other">
+							<h1>Autres</h1>
+							<div class="discord-widget">
+								<a href="https://discord.gg/G5YbenW"><img src="./images/discord.gif"></a>
+							</div>
 
-  // will not interfere with embedded &lt;a href=&quot;#voila2&quot;&gt;tags&lt;/a&gt;.
-}&lt;/pre&gt;</pre>
-							<p>Integer quis dignissim purus. Nam convallis mattis mi at venenatis. Donec vitae leo leo. Praesent auctor, nisi non fringilla dapibus, felis sem pretium enim, sed volutpat lectus turpis vitae orci. Vivamus vel interdum risus. Phasellus ullamcorper placerat nulla ut dictum. Proin tristique congue elit, in ullamcorper dolor dictum ut. Aenean commodo et odio semper mollis.</p>
-						</div>
-						<div class="section-txt" id="credit">
-							<h3>Credits</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis interdum sapien, vitae convallis ante. Nunc id mi scelerisque, laoreet nisl pretium, suscipit nisi. Proin porta tortor tellus, sed condimentum ligula aliquet sit amet. Mauris nulla ipsum, tempor eu vulputate ut, placerat ac tortor. Integer ut tincidunt magna. Suspendisse risus nulla, tempus a interdum et, imperdiet iaculis lectus. Maecenas ultrices diam eu massa maximus viverra.</p>
-							<img src="images/image1.jpg">
-							<p>Integer quis dignissim purus. Nam convallis mattis mi at venenatis. Donec vitae leo leo. Praesent auctor, nisi non fringilla dapibus, felis sem pretium enim, sed volutpat lectus turpis vitae orci. Vivamus vel interdum risus. Phasellus ullamcorper placerat nulla ut dictum. Proin tristique congue elit, in ullamcorper dolor dictum ut. Aenean commodo et odio semper mollis.</p>
-							<ul>
-								<li>Aliquam pretium euismod libero</li>
-								<li>Cum sociis natoque penatibus</li>
-								<li>Lorem ipsum dolor sit amet</li>
-								<li>Cras mauris tortor, consectetur</li>
-								<li>Proin viverra, augue ut mattis</li>
-								<li>Praesent rutrum accumsan</li>
-							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis interdum sapien, vitae convallis ante. Nunc id mi scelerisque, laoreet nisl pretium, suscipit nisi. Proin porta tortor tellus, sed condimentum ligula aliquet sit amet. Mauris nulla ipsum, tempor eu vulputate ut, placerat ac tortor. Integer ut tincidunt magna. Suspendisse risus nulla, tempus a interdum et, imperdiet iaculis lectus. Maecenas ultrices diam eu massa maximus viverra.</p>
 						</div>
 					</div>
 				</div>
