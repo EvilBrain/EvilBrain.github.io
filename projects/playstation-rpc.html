@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link href="./images/prpc-icon.ico" rel="shortcut icon" type="image/icon"/>
+	<title id="title">PlayStation RPC</title>
+	<meta property="og:title" content="PlayStation RPC" />
+	<meta property="og:site_name" content="EvilBrain - Projets" />
+	<meta property="og:type" content="project" />
+	<meta property="og:description" content="Page de l'application PlayStation RPC." />
+	<meta property="og:image" content="./images/prpc-icon.ico" />
+	<meta name="description" content="Page de l'application PlayStation RPC.">
+	<meta name="author" content="EvilBrain">
+	<meta name="publisher" content="EvilBrain Foundation">
+	<meta name="format-detection" content="telephone=no">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/prettify.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" >
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-xs-12 left">
+					<div id="logo">
+						<img src="./images/prpc-banner.png" alt="PlayStationRPC">
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-7 col-xs-12">
+					<div class="slogan">
+						<center>Documentation de l'application PlayStation RPC</center>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-xs-12 right">
+					<a class="btn" href="./src/PlayStationRPC_Setup.exe">Telecharger le setup</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<a id="buttonbtt"><i class="fas fa-angle-double-up"></i></a>
+	<section class="content">
+		<div class="container">
+			<div class="content-wrap">
+				<div class="row">
+					<aside>
+						<div class="menu-box">
+							<h4>Navigation</h4>	
+							<nav>
+								<ul>
+									<li><a href="#start" class="current">Présentation</a></li>
+									<li><a href="#features">Installation</a></li>
+									<li><a href="#code">Get code</a></li>
+									<li><a href="#images">Images</a></li>
+									<li><a href="#credit">Credits</a></li>
+								</ul>					
+							</nav>
+						</div>
+					</aside>
+					<div class="content-info">
+						<div class="section-txt" id="start">
+							<h1>Pésentation de l'application</h1>
+							<div class="images">
+								<img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/EvilBrain/PlayStationRPC?style=flat-square">
+								<img alt="GitHub" src="https://img.shields.io/github/license/EvilBrain/PlayStationRPC?style=flat-square">
+								<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/EvilBrain/PlayStationRPC?style=flat-square">
+								<img alt=".NET Framework version require" src="https://img.shields.io/badge/.NET%20Framework-8-green?style=flat-square">
+								<img alt="Sofware Size" src="https://img.shields.io/badge/dynamic/json?color=blue&label=size&query=size&url=https%3A%2F%2Fraw.githubusercontent.com%2FEvilBrain%2FPlayStationRPC%2Fmaster%2Fpackage.json&style=flat-square">
+								<img alt="Plateforms require" src="https://img.shields.io/badge/plateform-win--64%20%7C%20win--32-lightgrey?style=flat-square">
+							</div>
+
+							<p>Cet application vous permet d'avoir un "Rich Presence" sur l'application <a href="https://discordapp.com/">Discord</a> et d'afficher ce que vous jouez sur votre PlayStation. Ces séléctions sont manuelles.</p>
+							<img alt="Exemple d'un status disponible sur l'application" src="./images/prpc-exemple.png" style="float:right;"/>
+							<p>Ci-contre, un exemple de status disponible sur l'application.</p>
+							<p>Voici les outils disponibles sur l'application :</p>
+							<ul>
+								<li>PlayStation RPC - Pour les status PlayStation</li>
+								<li>Custom Presence - Pour faire un RPC personnalisé</li>
+								<li>Système de signalement de bug (blacklist si spam)</li>
+							</ul>
+							<p>Ce software se met à jour <strong>automatiquement</strong> au lancement de l'application via le raccourcis créé sur le bureau.</p>
+							<p><strong><i class="fas fa-exclamation-triangle"></i> ATTENTION : pour le bon fonctionnement de l'application, merci de laisser les fichiers sources dans leur dossier situé dans le AppData. Si jamais il vous venait à l'idée de supprimer le raccourcis sur le bureau, il est important de lancer "PlayStationRPC_Launcher.exe" pour mettre l'application à jour. <i class="fas fa-exclamation-triangle"></i></strong></p>
+						</div>
+						<div class="section-txt" id="features">
+							<h2>Installation</h2>
+							<h5>Prérequis</h5>
+							<ul>
+								<li>Le framework <a href="https://dotnet.microsoft.com/download/dotnet-framework/net48">Microsoft .NET Framework 8.</a></li>
+								<li>Le setup de l'application à télécharger en cliquant sur le bouton en haut à droite ou en cliquant <a href="./src/PlayStationRPC_Setup.exe">ici</a>.</li>
+								<li>L'application de bureau <a href="https://discordapp.com/download">Discord</a>. (bien évidemment)</li>
+							</ul>
+							<p><strong><i class="fas fa-exclamation-circle"></i> NOTE : il est important pour faire tourner l'application que le framework Microsoft .NET Framework 8 soit bien installé sur votre ordinateur ! <i class="fas fa-exclamation-circle"></i></strong></p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis interdum sapien, vitae convallis ante. Nunc id mi scelerisque, laoreet nisl pretium, suscipit nisi. Proin porta tortor tellus, sed condimentum ligula aliquet sit amet. Mauris nulla ipsum, tempor eu vulputate ut, placerat ac tortor. Integer ut tincidunt magna. Suspendisse risus nulla, tempus a interdum et, imperdiet iaculis lectus. Maecenas ultrices diam eu massa maximus viverra.</p>
+						<pre class="prettyprint">
+&lt;pre class=&quot;prettyprint&quot;&gt;class Voila {
+public:
+  // Voila
+  static const string VOILA = &quot;Voila&quot;;
+
+  // will not interfere with embedded &lt;a href=&quot;#voila2&quot;&gt;tags&lt;/a&gt;.
+}&lt;/pre&gt;</pre>
+							<p>Integer quis dignissim purus. Nam convallis mattis mi at venenatis. Donec vitae leo leo. Praesent auctor, nisi non fringilla dapibus, felis sem pretium enim, sed volutpat lectus turpis vitae orci. Vivamus vel interdum risus. Phasellus ullamcorper placerat nulla ut dictum. Proin tristique congue elit, in ullamcorper dolor dictum ut. Aenean commodo et odio semper mollis.</p>
+						</div>
+						<div class="section-txt" id="code">
+							<h3>Get code</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis interdum sapien, vitae convallis ante. Nunc id mi scelerisque, laoreet nisl pretium, suscipit nisi. Proin porta tortor tellus, sed condimentum ligula aliquet sit amet. Mauris nulla ipsum, tempor eu vulputate ut, placerat ac tortor. Integer ut tincidunt magna. Suspendisse risus nulla, tempus a interdum et, imperdiet iaculis lectus. Maecenas ultrices diam eu massa maximus viverra.</p>
+							<pre class="prettyprint">
+&lt;p&gt;Table Example:&lt;/p&gt;
+	&lt;style type=&quot;text/css&quot;&gt;
+		table.example5 {
+			background-color:GreenYellow;border:1px dotted black;width:100%;
+		}
+		table.example5 th, table.example5 td {
+			text-align:center;border:0;padding:5px;background-color:transparent;
+		}
+		table.example5 th {
+			background-color:LimeGreen;color:white;
+		}
+		table.example5 th:first-child {
+			width:20%;
+		}
+	&lt;/style&gt;
+	&lt;table class=&quot;example5&quot;&gt;
+		&lt;tr&gt;
+			&lt;th rowspan=&quot;2&quot;&gt;Table header&lt;/th&gt;&lt;td&gt;Table cell 1
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Table cell 2&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+</pre>
+						</div>
+						<div class="section-txt" id="images">
+							<h3>Images</h3>
+							<ul>
+								<li>Aliquam pretium euismod libero</li>
+								<li>Cum sociis natoque penatibus</li>
+								<li>Lorem ipsum dolor sit amet</li>
+								<li>Cras mauris tortor, consectetur</li>
+								<li>Proin viverra, augue ut mattis</li>
+								<li>Praesent rutrum accumsan</li>
+							</ul>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis interdum sapien, vitae convallis ante. Nunc id mi scelerisque, laoreet nisl pretium, suscipit nisi. Proin porta tortor tellus, sed condimentum ligula aliquet sit amet. Mauris nulla ipsum, tempor eu vulputate ut, placerat ac tortor. Integer ut tincidunt magna. Suspendisse risus nulla, tempus a interdum et, imperdiet iaculis lectus. Maecenas ultrices diam eu massa maximus viverra.</p>
+						<pre class="prettyprint">
+&lt;pre class=&quot;prettyprint&quot;&gt;class Voila {
+public:
+  // Voila
+  static const string VOILA = &quot;Voila&quot;;
+
+  // will not interfere with embedded &lt;a href=&quot;#voila2&quot;&gt;tags&lt;/a&gt;.
+}&lt;/pre&gt;</pre>
+							<p>Integer quis dignissim purus. Nam convallis mattis mi at venenatis. Donec vitae leo leo. Praesent auctor, nisi non fringilla dapibus, felis sem pretium enim, sed volutpat lectus turpis vitae orci. Vivamus vel interdum risus. Phasellus ullamcorper placerat nulla ut dictum. Proin tristique congue elit, in ullamcorper dolor dictum ut. Aenean commodo et odio semper mollis.</p>
+						</div>
+						<div class="section-txt" id="credit">
+							<h3>Credits</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis interdum sapien, vitae convallis ante. Nunc id mi scelerisque, laoreet nisl pretium, suscipit nisi. Proin porta tortor tellus, sed condimentum ligula aliquet sit amet. Mauris nulla ipsum, tempor eu vulputate ut, placerat ac tortor. Integer ut tincidunt magna. Suspendisse risus nulla, tempus a interdum et, imperdiet iaculis lectus. Maecenas ultrices diam eu massa maximus viverra.</p>
+							<img src="images/image1.jpg">
+							<p>Integer quis dignissim purus. Nam convallis mattis mi at venenatis. Donec vitae leo leo. Praesent auctor, nisi non fringilla dapibus, felis sem pretium enim, sed volutpat lectus turpis vitae orci. Vivamus vel interdum risus. Phasellus ullamcorper placerat nulla ut dictum. Proin tristique congue elit, in ullamcorper dolor dictum ut. Aenean commodo et odio semper mollis.</p>
+							<ul>
+								<li>Aliquam pretium euismod libero</li>
+								<li>Cum sociis natoque penatibus</li>
+								<li>Lorem ipsum dolor sit amet</li>
+								<li>Cras mauris tortor, consectetur</li>
+								<li>Proin viverra, augue ut mattis</li>
+								<li>Praesent rutrum accumsan</li>
+							</ul>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis interdum sapien, vitae convallis ante. Nunc id mi scelerisque, laoreet nisl pretium, suscipit nisi. Proin porta tortor tellus, sed condimentum ligula aliquet sit amet. Mauris nulla ipsum, tempor eu vulputate ut, placerat ac tortor. Integer ut tincidunt magna. Suspendisse risus nulla, tempus a interdum et, imperdiet iaculis lectus. Maecenas ultrices diam eu massa maximus viverra.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 center">
+					Création originale de EvilBrain déposée sous license GPL-3.0. <a href="https://raw.githubusercontent.com/EvilBrain/PlayStationRPC/master/LICENSE.txt" target="_blank">En savoir plus sur la license et les conditions d'utilisation.</a><br>Retrouvez plus d'infos sur le site <a href="../" target="_blank">evilbrain.github.io</a>.
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 center">
+					Made by EvilBrain Foundation © 2019. All rights reserved.
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/prettify.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+	<script src="https://kit.fontawesome.com/4436a55cce.js"></script>
+</body>
+</html>
