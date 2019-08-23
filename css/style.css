@@ -1,0 +1,44 @@
+body {
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*filter: blur(8px);*/
+}
+
+.shell {
+    font-family: 'Lucida Console', arial;
+}
+
+.body-shell {
+    left: 25%;
+    top: 21%;
+    width: 750px;
+    height: 500px;
+    background-color: rgba(12, 7, 7, 0.9);
+    position: absolute;
+    box-shadow: 1px 1px 12px rgb(10, 10, 10); 
+}
+
+.bar-shell {
+    left: 25%;
+    top: 17%;
+    border-radius: 7px 7px 0 0;
+    background-color: #4E4C45;
+    width: 750px;
+    height: 30px;
+    position: fixed;
+    box-shadow: 1px 1px 12px rgb(10, 10, 10);
+    text-align: center;
+}
+
+.bar-shell > p {
+    margin-top: 7px;
+    color: white;
+    font-size: 15px
+}
+
+.body-shell > p, pre, a {
+    color: white;
+    margin-left: 5px;
+    margin-top: 5px;
+}
